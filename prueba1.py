@@ -13,14 +13,6 @@ if __name__ == '__main__':
         return (sum)
 
     print(J(100))
-    p = sage.all.plot(J, 1, 100)
-    p.show()
-
-    qfun = lambda x: J(x)
-    q = sage.all.plot(qfun, 1, 100)
-    q.show()
-
-
 
     plt.plot([i*i for i in range(10)])
     plt.show()
