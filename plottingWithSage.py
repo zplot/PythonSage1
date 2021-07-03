@@ -1,6 +1,6 @@
 #!/Applications/SageMath-9-2.app/Contents/Frameworks/sage.framework/Versions/9.2/local/bin/python3.8 -python
 import sage.all
-import matplotlib.pyplot as plt
+
 
 
 
@@ -14,8 +14,8 @@ if __name__ == '__main__':
 
     print(J(100))
 
-    plt.plot([i*i for i in range(10)])
-    plt.show()
+    q = sage.all.plot(lambda x: J(x), 1, 100)
+    q.plot().save('plot4.png')
 
 
 
